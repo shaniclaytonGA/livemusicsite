@@ -1,10 +1,11 @@
+.wrapper {
+	-webkit-box-sizing: border-box;
+
 .column {
 	min-height: 30px;
-	border: 1px solid black;
-}
-
-.centered {
 	margin: 0 auto;
+	background-color: black;
+	background-size: 100%;
 }
 
 .header__logo {
@@ -14,7 +15,23 @@
 	height: 132px;
 }
 
-.header__nav {
-	float: right;
+.info__nav {
+	float: left;
 }
 
+.centered__background {
+	background-image: url("../assets/livemusic.jpg");
+	background-repeat: no-repeat;
+	min-height: 600px;
+	width: 100%;
+
+}
+
+.icons img {
+    width: 35px !important;
+    padding: 6px;
+    border: 0;
+    box-shadow: none !important;
+    display: inline !important;
+    vertical-align: middle;
+}

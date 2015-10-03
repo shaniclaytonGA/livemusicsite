@@ -10,25 +10,50 @@
 	<div class="wrapper ui grid">
 		<div class="row">
 			<header class="twelve wide column centered">
-				<div class="four wide column header__logo">
-				</div>
-				<div class="four wide column header__nav">
-					<a class="active item">About Us</a>
-					<a class="item">Services</a>
-					<a class="item">Careers</a>
-					<a class="item">Contact Us</a>
-					</div>
+				<div class="ui menu">
+				  <a class="item">Home</a>
+				  <a class="active item">Upcoming Events</a>
+				  <div class="ui dropdown item" tabindex="0">
+				    Genre
+				    <i class="dropdown icon"></i>
+				    <div class="menu transition hidden" tabindex="-1">
+				      <div class="item">Action</div>
+				      <div class="item">Another Action</div>
+				      <div class="item">Something else here</div>
+				      <div class="divider"></div>
+				      <div class="item">Separated Link</div>
+				      <div class="divider"></div>
+				      <div class="item">One more separated link</div>
+				    </div>
+				  </div>
+				  <div class="ui dropdown item" tabindex="0">
+				    Neighborhood
+				    <i class="dropdown icon"></i>
+				    <div class="menu transition hidden" tabindex="-1">
+				      <div class="item">Action</div>
+				      <div class="item">Another Action</div>
+				      <div class="item">Something else here</div>
+				      <div class="divider"></div>
+				      <div class="item">Separated Link</div>
+				      <div class="divider"></div>
+				      <div class="item">One more separated link</div>
+				    </div>
+				  </div>
+				  <div class="right menu">
+				    <div class="item">
+				      <div class="ui action left icon input">
+				        <i class="search icon"></i>
+				        <input type="text" placeholder="Search">
+				        <button class="ui button">Submit</button>
+				      </div>
+				    </div>
+				    <a class="item">Link</a>
+				  </div>
 				</div>
 			</header>
 		</div>
 		<div class="row">
-			<main class="twelve wide column centered">
-				<nav class="main-nav ui four item menu">
-					<a class="active item">Home</a>
-					<a class="item">Genre</a>
-					<a class="item">Neighborhood</a>
-					<a class="item">Upcoming Events</a>
-				</nav>
+			<main class="centered__background twelve wide column centered">
 				<div class="showcase">
 					<header>Popular Shows in Your Area</header>
 				</div>
@@ -37,14 +62,44 @@
 			</main>
 		</div>
 		<div class="row">
-			<footer class="twelve wide column centered">
-				<div class="footer-nav ui four item menu">
-					<a class="active item">Facebook</a>
-					<a class="item">Instagram</a>
-					<a class="item">Twitter</a>
-					<a class="item">Youtube</a>
+			<!-- <footer class="twelve wide column centered">
+				
+				<div class="eight wide ui menu column footer-sec">
+					<a class="facebook-icon active item"><img src="assets/facebook.png" alt="Facebook" /></a>
+					<a class="instagram-icon item"><img src="assets/instagram.png" alt="Instagram" /></a>
+					<a class="twitter-icon item"><img src="assets/TwitterLogo.png" alt="Twitter" /></a>
+					<a class="youtube-icon item"><img src="assets/Youtube.png" alt="YouTube" /></a>
+					<a class="footer__about--about item right-side-btn">About Us</a>
+					<a class="footer__about--services item right-side-btn">Services</a>
+					<a class="footer__about--career right-side-btn item">Careers</a>
+					<a class="footer__about--contact right-side-btn item">Contact</a>
 				</div>
-			</footer>
+			</footer> -->
+
+			<div class="ui inverted vertical footer segment twelve wide column centered">
+			    <div class="ui center aligned container">
+			      <div class="ui stackable inverted divided grid">
+			        <div class="two wide column">
+			          <h4 class="ui inverted header">Social Media</h4>
+			          <div class="ui inverted link list">
+			            <a href="http://www.facebook.com" target="_blank" class="icons"><img src="assets/facebook.png" alt="Facebook" /></a>
+			            <a href="http://www.instagram.com" target="_blank" class="icons"><img src="assets/instagram.png" alt="Instagram" /></a>
+			            <a href="http://www.twitter.com" target="_blank" class="icons"><img src="assets/TwitterLogo.png" alt="Twitter" /></a>
+			            <a href="http://www.youtube.com" target="_blank" class="icons"><img src="assets/Youtube.png" alt="YouTube" /></a>
+			          </div>
+			        </div>
+			        <div class="two wide column">
+			          <h4 class="ui inverted header">More Info.</h4>
+			          <div class="ui inverted link list">
+			            <a href="#" class="about--about item right-side-btn">About Us</a>
+			            <a href="#" class="about--services item right-side-btn">Services</a>
+			            <a href="#" class="about--careers item right-side-btn">Careers</a>
+			            <a href="#" class="about--contact item right-side-btn">Contact</a>
+			          </div>
+			        </div>
+			      </div>
+			    </div>
+		  </div>
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
