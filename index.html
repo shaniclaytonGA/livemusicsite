@@ -2,8 +2,10 @@
 <html>
 <head>
 	<title>Live Music</title>
-	<link rel="stylesheet" type="text/css" href="styles/reset.css">
+	<!-- <link rel="stylesheet" type="text/css" href="styles/reset.css"> -->
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick-theme.css"/>
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 <body>
@@ -47,63 +49,67 @@
 				        <button class="ui button">Submit</button>
 				      </div>
 				    </div>
-				    <a class="item">Link</a>
+				    <a class="item">Sign In</a>
+				    <a class="item">Logout</a>
 				  </div>
 				</div>
 			</header>
 		</div>
-		<div class="row">
-			<main class="centered__background twelve wide column centered">
+			<!-- <main class="centered__background twelve wide column centered">
 				<div class="showcase">
 					<header>Popular Shows in Your Area</header>
 				</div>
 				<div class="ticker">
 				</div>
-			</main>
-		</div>
-		<div class="row">
-			<!-- <footer class="twelve wide column centered">
-				
-				<div class="eight wide ui menu column footer-sec">
-					<a class="facebook-icon active item"><img src="assets/facebook.png" alt="Facebook" /></a>
-					<a class="instagram-icon item"><img src="assets/instagram.png" alt="Instagram" /></a>
-					<a class="twitter-icon item"><img src="assets/TwitterLogo.png" alt="Twitter" /></a>
-					<a class="youtube-icon item"><img src="assets/Youtube.png" alt="YouTube" /></a>
-					<a class="footer__about--about item right-side-btn">About Us</a>
-					<a class="footer__about--services item right-side-btn">Services</a>
-					<a class="footer__about--career right-side-btn item">Careers</a>
-					<a class="footer__about--contact right-side-btn item">Contact</a>
-				</div>
-			</footer> -->
+			</main> -->
 
-			<div class="ui inverted vertical footer segment twelve wide column centered">
-			    <div class="ui center aligned container">
-			      <div class="ui stackable inverted divided grid">
-			        <div class="two wide column">
-			          <h4 class="ui inverted header">Social Media</h4>
-			          <div class="ui inverted link list">
-			            <a href="http://www.facebook.com" target="_blank" class="icons"><img src="assets/facebook.png" alt="Facebook" /></a>
-			            <a href="http://www.instagram.com" target="_blank" class="icons"><img src="assets/instagram.png" alt="Instagram" /></a>
-			            <a href="http://www.twitter.com" target="_blank" class="icons"><img src="assets/TwitterLogo.png" alt="Twitter" /></a>
-			            <a href="http://www.youtube.com" target="_blank" class="icons"><img src="assets/Youtube.png" alt="YouTube" /></a>
-			          </div>
-			        </div>
-			        <div class="two wide column">
-			          <h4 class="ui inverted header">More Info.</h4>
-			          <div class="ui inverted link list">
-			            <a href="#" class="about--about item right-side-btn">About Us</a>
-			            <a href="#" class="about--services item right-side-btn">Services</a>
-			            <a href="#" class="about--careers item right-side-btn">Careers</a>
-			            <a href="#" class="about--contact item right-side-btn">Contact</a>
-			          </div>
-			        </div>
-			      </div>
-			    </div>
-		  </div>
+			<!--<div class="the-slider">
+			  	<div class="centered__background">
+				  <div><img class="slide1" src="assets/slide1.jpg" alt="Artist1" />your content</div>
+				  <div><img class="slide2" src="assets/slide2.jpg" alt="Artist1" />your content</div>
+				  <div><img class="slide3" src="assets/slide3.jpg" alt="Artist1" />your content</div>
+				</div>
+			</div>-->
+		<main class="centered__background twelve wide column centered">
+			<div class="showcase">
+				<div class="logolive"></div>
+				<p class="fontupdate"><i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</br>Aenean commodo ligula eget dolor. Aenean massa.</i></p>
+				<header class="text">Popular Shows in Your Area</header>
+				<div class="boxes--left"><img class="boxes" src="assets/slide1.jpg" alt="Artist1" /></div>
+				<div class="boxes--middle"><img class="boxes" src="assets/slide2.jpg" alt="Artist2" /></div>
+				<div class="boxes--right"><img class="boxes" src="assets/slide3.jpg" alt="Artist3" /></div>
+			</div>
+		</main>
+
+		<div class="footer-section">
+			<span class="footer-menu-holders">
+				<a class="facebook-icon active"><img class="social-icons" src="assets/facebook.png" alt="Facebook" /></a>
+			</span>
+			<span class="footer-menu-holders">
+				<a class="instagram-icon"><img class="social-icons" src="assets/instagram.png" alt="Instagram" /></a>
+			</span>
+			<span class="footer-menu-holders">
+				<a class="twitter-icon"><img class="social-icons" src="assets/TwitterLogo.png" alt="Twitter" /></a>
+			</span>
+			<span class="footer-menu-holders">
+				<a class="youtube-icon"><img class="social-icons" src="assets/Youtube.png" alt="YouTube" /></a>
+			</span>
+			<span class="footer-menu-holders">
+				<a class="footer__about--about right-side-btn">About Us</a>
+			</span>
+			<span class="footer-menu-holders">
+				<a class="footer__about--services right-side-btn">Services</a>
+			</span>
+			<span class="footer-menu-holders">
+				<a class="footer__about--career right-side-btn">Careers</a>
+			</span>
+			<span class="footer-menu-holders">
+				<a class="footer__about--contact right-side-btn">Contact</a>
+			</span>
 		</div>
-	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
 	<script type="text/javascript" src="scripts/main.js"></script>
 </body>
 </html>

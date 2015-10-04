@@ -1,5 +1,17 @@
+/* app level */
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	margin: 0 0 100px;
+}
+
 .wrapper {
 	-webkit-box-sizing: border-box;
+
+}
 
 .column {
 	min-height: 30px;
@@ -8,30 +20,128 @@
 	background-size: 100%;
 }
 
-.header__logo {
-	float: left;
-	background-image: url("../assets/logo.jpg");
-	width: 110px;
-	height: 132px;
-}
-
 .info__nav {
 	float: left;
 }
 
 .centered__background {
-	background-image: url("../assets/livemusic.jpg");
+	background-image: url("../assets/background.jpg");
 	background-repeat: no-repeat;
 	min-height: 600px;
 	width: 100%;
 
 }
 
-.icons img {
+/*.icons img {
     width: 35px !important;
     padding: 6px;
     border: 0;
     box-shadow: none !important;
     display: inline !important;
     vertical-align: middle;
+}*/
+
+/* middle sections stuff */
+
+.middle-section {
+	margin-bottom: 50px;
 }
+
+.logolive {
+	float: right;
+	background-image: url("../assets/logo.jpg");
+	width: 110px;
+	height: 132px;
+}
+
+.fontupdate {
+	font-size: 15px;
+	color: white;
+
+}
+.boxes {
+    position: relative;
+    border: solid 1px white;
+    width: 300px;
+    height: 200px;
+
+}
+
+.boxes img {
+	max-width: 100%;
+    max-height: 100%;
+    outline: solid 1px red;
+    vertical-align: bottom;
+}
+
+.boxes--right {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin: 5px;
+}
+
+.boxes--left {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin: 5px;
+}
+
+.boxes--middle {
+	position   : absolute;
+    bottom     : 0;
+    left       : 0;
+    right      : 0;
+    text-align : center;
+}
+
+.text {
+	font-size: 30px;
+	color: white;
+	height: 40px;
+    line-height: 700px;
+}
+
+/* footer section */
+
+.footer-section {
+    position: absolute;
+    left: 0;
+    bottom: -90px;
+    height: 100px;
+    width: 100%;
+    background-color: #000;
+    padding: 20px 50px;
+    display: none;
+}
+
+.footer-menu-holders {
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+
+img.social-icons {
+	width: 100%;
+	height: 100%;
+}
+
+.right-side-btn {
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
