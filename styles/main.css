@@ -32,88 +32,73 @@ body {
 
 }
 
-/*.icons img {
-    width: 35px !important;
-    padding: 6px;
-    border: 0;
-    box-shadow: none !important;
-    display: inline !important;
-    vertical-align: middle;
-}*/
+/* nav section */
+
+.navbar-brand {
+	padding: 0;
+}
+
+.logo-holder img {
+  width: 60px;
+}
+
 
 /* middle sections stuff */
 
-.middle-section {
-	margin-bottom: 50px;
+.content-slider {
+	width: 820px;
+	margin: 0 auto;
 }
 
-.logolive {
-	float: right;
-	background-image: url("../assets/logo.jpg");
-	width: 110px;
-	height: 132px;
+.slides {
+  padding: 20px;
 }
 
-.fontupdate {
-	font-size: 15px;
-	color: white;
-
-}
-.boxes {
-    position: relative;
-    border: solid 1px white;
-    width: 300px;
-    height: 200px;
-
+.slide-1 {
+	background-image: url("../assets/slide1.jpg");
+	background-repeat: no-repeat;
+	height: 500px;
 }
 
-.boxes img {
-	max-width: 100%;
-    max-height: 100%;
-    outline: solid 1px red;
-    vertical-align: bottom;
+.slide-2 {
+	background-image: url("../assets/slide2.jpg");
+	background-repeat: no-repeat;
+	height: 500px;
 }
 
-.boxes--right {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	margin: 5px;
+.slide-3 {
+	background-image: url("../assets/slide3.jpg");
+	background-repeat: no-repeat;
+	height: 500px;
 }
 
-.boxes--left {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	margin: 5px;
+.slides__img-container {
+  float: left;
+  height: 250px;
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 5px;
 }
 
-.boxes--middle {
-	position   : absolute;
-    bottom     : 0;
-    left       : 0;
-    right      : 0;
-    text-align : center;
-}
-
-.text {
-	font-size: 30px;
-	color: white;
-	height: 40px;
-    line-height: 700px;
+.slides__text-container {
+  float: left;
+  width: 50%;
+  background-color: rgba(255, 255, 255, .65);
+  border-radius: 5px;
+  margin-left: 20px;
+  padding: 10px;
 }
 
 /* footer section */
 
 .footer-section {
-    position: absolute;
-    left: 0;
-    bottom: -90px;
-    height: 100px;
-    width: 100%;
-    background-color: #000;
-    padding: 20px 50px;
-    display: none;
+  position: absolute;
+  left: 0;
+  bottom: -90px;
+  height: 100px;
+  width: 100%;
+  background-color: #000;
+  padding: 20px 50px;
+  display: none;
 }
 
 .footer-menu-holders {

@@ -3,84 +3,92 @@
 <head>
 	<title>Live Music</title>
 	<!-- <link rel="stylesheet" type="text/css" href="styles/reset.css"> -->
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.8/slick-theme.css"/>
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 <body>
 	<div class="wrapper ui grid">
-		<div class="row">
-			<header class="twelve wide column centered">
-				<div class="ui menu">
-				  <a class="item">Home</a>
-				  <a class="active item">Upcoming Events</a>
-				  <div class="ui dropdown item" tabindex="0">
-				    Genre
-				    <i class="dropdown icon"></i>
-				    <div class="menu transition hidden" tabindex="-1">
-				      <div class="item">Action</div>
-				      <div class="item">Another Action</div>
-				      <div class="item">Something else here</div>
-				      <div class="divider"></div>
-				      <div class="item">Separated Link</div>
-				      <div class="divider"></div>
-				      <div class="item">One more separated link</div>
-				    </div>
-				  </div>
-				  <div class="ui dropdown item" tabindex="0">
-				    Neighborhood
-				    <i class="dropdown icon"></i>
-				    <div class="menu transition hidden" tabindex="-1">
-				      <div class="item">Action</div>
-				      <div class="item">Another Action</div>
-				      <div class="item">Something else here</div>
-				      <div class="divider"></div>
-				      <div class="item">Separated Link</div>
-				      <div class="divider"></div>
-				      <div class="item">One more separated link</div>
-				    </div>
-				  </div>
-				  <div class="right menu">
-				    <div class="item">
-				      <div class="ui action left icon input">
-				        <i class="search icon"></i>
-				        <input type="text" placeholder="Search">
-				        <button class="ui button">Submit</button>
-				      </div>
-				    </div>
-				    <a class="item">Sign In</a>
-				    <a class="item">Logout</a>
-				  </div>
-				</div>
-			</header>
+
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#"><div class="logo-holder"><img src="assets/logo.jpg"></div></a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+		        <li><a href="#">Link</a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li><a href="#">Something else here</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">One more separated link</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		      <form class="navbar-form navbar-left" role="search">
+		        <div class="form-group">
+		          <input type="text" class="form-control" placeholder="Search">
+		        </div>
+		        <button type="submit" class="btn btn-default">Submit</button>
+		      </form>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#">Link</a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li><a href="#">Something else here</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+		<!-- slider section -->
+
+		<div class="content-slider">
+		  <div class="slides slide-1">
+		  	<div class="slides__img-container">
+		  		<h3>somw image goes here</h3>
+		  	</div>
+		  	<div class="slides__text-container">
+		  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		  		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		  		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		  		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		  		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		  		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		  	</div>
+		  </div>
+		  <div class="slides slide-2">your content</div>
+		  <div class="slides slide-3">your content</div>
 		</div>
-			<!-- <main class="centered__background twelve wide column centered">
-				<div class="showcase">
-					<header>Popular Shows in Your Area</header>
-				</div>
-				<div class="ticker">
-				</div>
-			</main> -->
 
-			<!--<div class="the-slider">
-			  	<div class="centered__background">
-				  <div><img class="slide1" src="assets/slide1.jpg" alt="Artist1" />your content</div>
-				  <div><img class="slide2" src="assets/slide2.jpg" alt="Artist1" />your content</div>
-				  <div><img class="slide3" src="assets/slide3.jpg" alt="Artist1" />your content</div>
-				</div>
-			</div>-->
-		<main class="centered__background twelve wide column centered">
-			<div class="showcase">
-				<div class="logolive"></div>
-				<p class="fontupdate"><i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</br>Aenean commodo ligula eget dolor. Aenean massa.</i></p>
-				<header class="text">Popular Shows in Your Area</header>
-				<div class="boxes--left"><img class="boxes" src="assets/slide1.jpg" alt="Artist1" /></div>
-				<div class="boxes--middle"><img class="boxes" src="assets/slide2.jpg" alt="Artist2" /></div>
-				<div class="boxes--right"><img class="boxes" src="assets/slide3.jpg" alt="Artist3" /></div>
-			</div>
-		</main>
 
+		
+
+		<!-- footer section -->
 		<div class="footer-section">
 			<span class="footer-menu-holders">
 				<a class="facebook-icon active"><img class="social-icons" src="assets/facebook.png" alt="Facebook" /></a>
@@ -107,8 +115,14 @@
 				<a class="footer__about--contact right-side-btn">Contact</a>
 			</span>
 		</div>
+	</div>
+
+
+
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
 	<script type="text/javascript" src="scripts/main.js"></script>
 </body>

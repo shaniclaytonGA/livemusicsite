@@ -2,24 +2,20 @@
 
 	// this is API section
 	var venueLoc = $("some input from DOM");
-	var baseURL = "http://api.songkick.com/api/3.0/venues/" + venueLoc + "/calendar.json?apikey=";
-
-	var __MY_KEY__ = ""
-	
-	var fullURL = baseURL + __MY_KEY__;
+	var baseURL = "http://api.jambase.com/events?zipCode=95128&page=1&api_key=69cc7meyzhktnpfe5zn9ut76&o=json";
 
 	function successFunc( data ) {
 		console.log('this is returned data:', data);
 	}
 
-	// $.ajax({
-	// 	method: "GET",
-	// 	url: fullURL,
-	// 	success: successFunc
-	// })
+	$.ajax({
+		method: "GET",
+		url: baseURL,
+		success: successFunc
+	});
 
 	// This is the slickslider section
-	$('.the-slider').slick({
+	$('.content-slider').slick({
 		slideToShow: 1,
 		infinite: true
 	});
