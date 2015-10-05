@@ -12,7 +12,7 @@
 
 		// data.Events[0].Date
 		var slideloop = data.Events;
-	
+	console.log( data.Events )
 		for ( var i = 1; i < 4; i++){
 
 			var artistName = slideloop[i].Artists[0].Name,
@@ -21,7 +21,7 @@
 				showVenueAddress = slideloop[i].Venue.Address,
 				showTickets = slideloop[i].TicketUrl;
 
-			var displayName = $(".content-slider").append('<div class="slides slide-1"><div class="slides__img-container"><h3 class="boximage1">some image goes here</h3></div><div class="slides__text-container js-holder">' + showDate + '</div><div class="slides__text-container js-holder">' + artistName + '</div><div class="slides__text-container venue-name">' + showVenueName + '</div><div class="slides__text-container venue-addy">' + showVenueAddress + '</div><a href="' + showTickets + '" target="_blank"><span class="get-tix">GET TIX</span></a></div>');		
+			var displayName = $(".content-slider").append('<div class="slides slide-1"><div class="slides__img-container"><div class="boximage'+(i+0)+'"></div></div><div class="slides__text-container js-holder">' + showDate + '</div><div class="slides__text-container js-holder">' + artistName + '</div><div class="slides__text-container venue-name">' + showVenueName + '</div><div class="slides__text-container venue-addy">' + showVenueAddress + '</div><a href="' + showTickets + '" target="_blank"><span class="get-tix">GET TIX</span></a></div>');		
 
 
 		}
@@ -44,3 +44,36 @@
 	}
 
 })();
+
+//psuedo code for search function
+// everything will happen on the click event
+// get the value of the search form 
+// - google how to get value of seach form using jquery 
+// from there on, after you get the value of the search form then 
+
+//$('searchform') .on('click'),
+	//function () {
+		//value of 'searchform' 
+		//input same $.ajax call
+		//then call successFunc }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
