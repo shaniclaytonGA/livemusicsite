@@ -65,15 +65,50 @@
 		      </ul>
 		      <form class="navbar-form navbar-left" role="search">
 		        <div class="form-group">
-		          <input type="text" class="form-control" placeholder="Search">
+		          <input type="text" class="form-control" placeholder="Genre / Neighborhood / Venue">
 		        </div>
 		        <button type="submit" class="btn btn-default">Submit</button>
 		      </form>
-		     <ul class="nav navbar-nav pull-right">
-		     	<!-- to add default add class="active" -->
-		       	<li><a href="#">Login <span class="sr-only">(current)</span></a></li>
-		        <li><a href="#">Signout</a></li>
-		     </ul>
+		     <ul class="nav nav-pills pull-left">
+                        <li class="dropdown" id="menuLogin">
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">Login</a>
+                            <div class="dropdown-menu" style="padding:17px;">
+                                <form id="formLogin" class="form"> 
+                                    <label>Login</label> 
+                                    <input name="_csrf" id="token" type="hidden" value="2XFCnU8L-Nhs-CD_LGxYNnPdqK-7hVQZbWrU">
+    							    <input name="username" id="username" type="text" placeholder="Username" pattern="^[a-z,A-Z,0-9,_]{6,15}$" data-valid-min="6" title="Enter your username" required="">
+    							    <input name="password" id="password" type="password" placeholder="Password" title="Enter your password" required=""><br>
+    							    <button type="button" id="btnLogin" class="btn">Login</button>
+    							</form>
+                                <form><a href="#" title="Fast and free sign up!" id="btnNewUser" data-toggle="collapse" data-target="#formRegister">New User? Sign-up..</a></form>
+                                <form id="formRegister" class="form collapse">
+                                    <input name="_csrf" id="token" type="hidden" value="2XFCnU8L-Nhs-CD_LGxYNnPdqK-7hVQZbWrU">
+                                    <input name="email" id="inputEmail" type="email" placeholder="Email" required="">
+        						    <input name="username" id="inputUsername" type="text" placeholder="Username" pattern="^[a-z,A-Z,0-9,_]{6,15}$" data-valid-min="6" title="Choose a username" required=""><br>
+    							    <input name="password" id="inputpassword" type="password" placeholder="Password" required=""> 
+                                    <input name="verify" id="inputVerify" type="password" placeholder="Password (again)" required=""><br>                                  
+    							    <button type="button" id="btnRegister" class="btn">Sign Up</button>
+    							</form>
+                                <a data-toggle="modal" role="button" href="#forgotPasswordModal">Forgot username or password?</a>
+                                <a data-toggle="modal" role="button" href="#contactModal"><small>Need help? Contact us</small></a>
+                            </div>
+                        </li>
+                        <li class="dropdown hide" id="menuUser">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="See your Bootply collection and profile">
+                                <i class="icon-user icon-xxlarge"> </i> <span id="lblUsername"></span>
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/user">Dashboard</a></li>
+                                <li><a href="/new">Create New Bootply</a></li>
+                                
+                                <li><a href="/logout">Logout</a></li>
+                                <li class="divider"> </li>
+                                <li><a href="/bootstrap-community">Community</a></li>
+                                <li><a href="/about">About</a></li>
+                            </ul>
+                        </li>
+                    </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>

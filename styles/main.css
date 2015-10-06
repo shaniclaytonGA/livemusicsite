@@ -75,13 +75,79 @@ body {
     width: 60px;
     border-radius: 34%;
     height: 55px;
+    padding-right: 5px;
 }
 
+.nav.pull-left {
+    float: right!important;
+    margin-left: 30%;
+    margin-top: 5px;
+}
+
+.nav-pills .dropdown-menu {
+    margin-top: 4px;
+}
+
+.open>.dropdown-menu {
+    display: block;
+}
+
+.nav-pills .dropdown-menu {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.dropdown-menu {
+    z-index: 2000;
+}
+
+.navbar .pull-left>li>.dropdown-menu, .navbar .nav>li>.dropdown-menu.pull-left {
+    right: auto;
+    left: 0;
+}
+
+.navbar .nav>li>.dropdown-menu:before {
+    content: '';
+    display: inline-block;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #ccc;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: -7px;
+    left: 69px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px -12px 0;
+    list-style: none;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
 
 /* middle sections stuff */
 
 .content-header {
-    width: 900px;
+    width: 1510px;
     padding: 10px 0 10px 0;
     text-align: center;
     font-size: 24px;
@@ -118,7 +184,7 @@ body {
 
 .boximage3 {
 	background-image: url("../assets/themynabirds.jpg");
-    width: 400px;
+    width: 410px;
     height: 266px;
     padding: 0 1.5% 2% 2%;
     margin-left: 1.3%;
@@ -225,14 +291,14 @@ strong {
     margin-left: 20%;
 }
 
-.socialposition{
-	margin-left: 40%;
+.socialposition {
+    margin-left: 38%;
 }
 
 #footer-help {
     float: left;
     margin-right: 10%;
-    margin-left: 22%;
+    margin-left: 37%;
 }
 
 #social-media-icons {
@@ -267,14 +333,14 @@ strong {
 }
 
 #footer-signature {
-	padding-top: 5px;
-    width: 1180px;
+    padding-top: 5px;
+    width: 1188px;
     position: relative;
     top: 222px;
     border-top: thin solid #226970;
     margin-right: 60%;
     margin-bottom: 80%;
-    margin-left: 5%;
+    margin-left: 3%;
 }
 
 
