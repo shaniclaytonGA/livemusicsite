@@ -72,7 +72,9 @@ body {
 }
 
 .logo-holder img {
-  width: 55px;
+    width: 60px;
+    border-radius: 34%;
+    height: 55px;
 }
 
 
@@ -130,7 +132,7 @@ body {
 }
 
 .boximage2 {
-	background-image: url("../assets/djaaron.jpeg");
+	background-image: url("../assets/momdjs.jpg");
 	width: 410px;
 	height: 266px;
 	padding: 0 1.5% 2% 1.5%;
@@ -203,7 +205,6 @@ img.social-icons {
 }
 
 .footer-nav div {
-    float: left;
     display: inline;
     width: 200px;
 }
@@ -221,20 +222,60 @@ footer strong {
 
 strong {
     font-weight: 700;
+    margin-left: 20%;
+}
+
+.socialposition{
+	margin-left: 40%;
+}
+
+#footer-help {
+    float: left;
+    margin-right: 10%;
+    margin-left: 22%;
 }
 
 #social-media-icons {
     position: relative;
     margin-top: 20px;
+    margin-left: 10%;
+}
+
+/*.navbar-btn {
+	border-radius: 60%;
+    margin-top: 40px;
+    margin-bottom: 8px;
+    float: right;
+    margin-right: -820%;
+    background-color: #000;
+} */
+
+.socialbutton {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-top: 9px;
+    margin-bottom: -3px;
+    /* float: right; */
+    margin-right: %;
+    margin-left: 2px;
+    margin-right: -5px;
+}
+
+#footer-social-media {
+	float: right;
 }
 
 #footer-signature {
-    padding-top: 5px;
+	padding-top: 5px;
     width: 1180px;
     position: relative;
-    top: 40px;
+    top: 222px;
     border-top: thin solid #226970;
-
+    margin-right: 60%;
+    margin-bottom: 80%;
+    margin-left: 5%;
+}
 
 
 
