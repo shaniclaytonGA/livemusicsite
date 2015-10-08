@@ -4,7 +4,7 @@
 
 	// this is API section
 	var venueLoc = $("some input from DOM");
-	var baseURL = "http://api.jambase.com/events?zipCode=95128&page=1&api_key=rdrguhhx4m58qdedtk59cbqw&o=json";
+	var baseURL = "http://api.jambase.com/events?zipCode=95128&page=1&api_key=69cc7meyzhktnpfe5zn9ut76&o=json";
 
 	function successFunc( data ) {
 		console.log('this is returned data.Events:', data.Events);
