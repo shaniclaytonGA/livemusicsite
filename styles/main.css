@@ -28,13 +28,19 @@
 
 /* app level */
 html {
-	position: relative;
-	min-height: 100%;
+	position: absolute;
+	margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
 }
 
 body {
-	margin: 0 0 100px;
+	margin: 0;
+    padding: 0;
+    height: 100%;
 	background-color: #000;
+    width: 100%;
 }
 
 .wrapper {
@@ -250,6 +256,15 @@ li {
 
 /* middle sections stuff */
 
+.slider-wrapper {
+    height:100%;
+    width:100%;
+    position: relative;
+    top:0;
+    left:0;
+    overflow:hidden;
+}
+
 .content-header {
     padding: 10px 0 10px 0;
     text-align: center;
@@ -257,7 +272,6 @@ li {
     font-weight: 600;
     color: #FFF;
     background-color: #000;
-    padding-right: 42.5%;
 }
 
 .content-slider {
@@ -286,8 +300,9 @@ li {
 }
 
 .boximage3 {
-	background-image: url("../assets/themynabirds.jpg");
-    width: 410px;
+    background-image: url("../assets/themynabirds.jpg");
+    background-repeat: no-repeat;
+    width: 400px;
     height: 266px;
     padding: 0 1.5% 2% 2%;
     margin-left: 1.3%;
@@ -365,6 +380,7 @@ img.social-icons {
 	float: right; 
 } */
 
+
 .footer-nav {
     margin-bottom: 12px;
     height: 150px;
@@ -408,7 +424,7 @@ strong {
 
 #social-media-icons {
     position: relative;
-    margin-left: 10%;
+    margin: 0 auto;
 }
 
 /*.navbar-btn {
@@ -441,13 +457,13 @@ strong {
     padding-top: 5px;
     width: 1188px;
     position: relative;
-    top: 200px;
+    top: 50%;
     border-top: 1px solid #226970;
-    margin-left: 8%;
 }
 
 .footer-wrapper {
 	width: 100%;
+    margin: 0 auto;
 }
 .sig-wrapper {
 	width: 100%;
