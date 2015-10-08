@@ -13,7 +13,7 @@
 		// data.Events[0].Date
 		var slideloop = data.Events;
 	console.log( data.Events )
-		for ( var i = 1; i < 4; i++){
+		for ( var i = 2; i < 5; i++){
 
 			var artistName = slideloop[i].Artists[0].Name,
 				showDate = new Date( slideloop[i].Date ),
